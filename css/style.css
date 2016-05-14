@@ -1,0 +1,238 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: #e6e6e6;
+}
+
+@keyframes slideRight {
+  from { transform: translateX(-1000px) }
+  to { transform: translateX(0) }
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(1000px) }
+  to { transform: translateX(0) }
+}
+
+.nav {
+
+  margin-bottom: 50px;
+}
+
+.logotype {
+  display: flex;
+  padding: 20px 25px 20px 25px;
+  color: #DC3522;
+  background-color: #DC3522;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  
+}
+
+
+.word1 {
+  padding-right: 15px;
+  font-size: 2em;
+  color: white;
+  animation: slideRight 1s;
+}
+
+.word2 {
+  color: white;
+ font-size: 2em; 
+  animation: slideLeft 1s;
+
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+   list-style: none;
+  margin: 0 auto;
+  padding: 10px;
+  z-index: 999;
+   width: 100%;
+
+}
+
+li {
+ margin: 0 25px;
+  
+}
+
+li svg {
+  width: 50px;
+  height: 50px;
+  fill: #DC3522;
+}
+
+
+.grid {
+ 
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 7px;
+  background-color: #DC3522;
+  box-shadow: 0px 0px 5px 0px rgba(42, 44, 43, 0.3);
+  flex: auto;
+  
+}
+.card img {
+   object-fit: cover;
+height: 100%;
+   width: 100%;
+}
+
+
+.quote-card {
+  display: flex;
+  width: 320px;
+  margin: 7px;
+  flex-flow: column wrap;
+  justify-content: enter;
+  align-items: center;
+  background-color: #DC3522;
+  box-shadow: 0px 0px 5px 0px rgba(42, 44, 43, 0.3);
+  flex: auto;
+}
+
+.quote-card p {
+color: white;
+  font-size: 2.5em;
+  object-fit: cover;
+}
+
+.quote-card h5 {
+  padding-left: 80px;
+  margin: -30px 0;
+}
+
+/* Copy card */
+
+.copy-card {
+  display: flex;
+  width: 320px;
+  height: 320px;
+  margin: 7px;
+  flex-flow: column wrap;
+    justify-content: center;
+  align-content: flex-start;
+  background-color: #DC3522;
+  box-shadow: 0px 0px 5px 0px rgba(42, 44, 43, 0.3);
+  flex: auto;
+  object-fit: cover;
+}
+
+.copy-card p {
+color: white;
+  font-size: 1.3em;
+  object-fit: cover;
+    margin: 0;
+  padding: 0px 50px;
+  letter-spacing: .5px;
+  font-family: 'Crimson Text', serif;
+
+
+}
+
+
+/* End Copy Card */
+
+.large-card {
+  display: flex;
+  width: 480px;
+  height: 320px;
+  margin: 7px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(110,123,140,0.3);
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  flex: auto;
+  
+}
+
+.info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  color: #DC3522;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+
+}
+
+ img {
+   object-fit: cover;
+height: 100%;
+   width: 100%;
+}
+
+.quote {
+  margin: 0;
+  padding: 50px 50px;
+  color: #888888;
+  
+}
+
+/* Typography */
+@import url(https://fonts.googleapis.com/css?family=Muli:400,300);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,700);
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+  font-family: 'Muli', sans-serif;
+  color: white;
+  
+}
+h2 {
+    font-size: 1em;
+    color: #DC3522;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+}
+
+
+p {
+    font-family: 'Crimson Text', serif;
+    color: #1E1E20;
+}
+
+/*Links*/
+a:hover {
+    
+    color: #374140;
+}
+
+a {
+    text-decoration: underline;
+    color: #DC3522;
+    
+    
+}
